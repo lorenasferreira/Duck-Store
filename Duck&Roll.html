@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck & Roll - Formulario de Registro</title>
+    <link rel="stylesheet" href="Duck&Roll.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="nav-bar">
+
+            <div class="logo-container">
+                <img src="logos/logoduck.png" alt="logoduck" class="logo-patito">
+                <span class="brand-name">Duck & Roll</span>
+            </div>
+
+            <nav class="main-nav">
+                <a href="#">Productos</a>
+                <a href="#">Contacto</a>
+            </nav>
+
+            <form class="search-form" action="/search" method="get">
+                <input type="text" placeholder="Buscar..." name="query">
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="form-container">
+
+        <header class="form-subheader">
+            <p>Formulario de Registro</p>
+        </header>
+
+        <form action="/registro" method="post" class="registro-form">
+
+            <div class="field-group three-cols">
+                <div>
+                    <label for="nombre">Nombre y Apellidos</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellidos" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+3400000000" required>
+                </div>
+                <div>
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="info@duckandroll.com" required>
+                </div>
+            </div>
+
+            <div class="field-group one-col">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Dirección completa" required>
+            </div>
+
+            <div class="field-group three-cols">
+                <div>
+                    <label for="pais">País</label>
+                    <input type="text" id="pais" name="pais" placeholder="España" required>
+                </div>
+                <div>
+                    <label for="provincia">Provincia</label>
+                    <input type="text" id="provincia" name="provincia" placeholder="Barcelona" required>
+                </div>
+                <div>
+                    <label for="cp">Código postal</label>
+                    <input type="text" id="cp" name="cp" placeholder="08007" required>
+                </div>
+            </div>
+
+            <div class="field-group two-cols">
+                <div>
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+                <div>
+                    <label for="repetir-contrasena">Repetir Contraseña</label>
+                    <input type="password" id="repetir-contrasena" name="repetir-contrasena" required>
+                </div>
+            </div>
+
+            <div class="field-group checkbox-group">
+                <input type="checkbox" id="info-comercial" name="info-comercial">
+                <label for="info-comercial" class="checkbox-label">Deseo recibir información comercial</label>
+            </div>
+
+            <button type="submit" class="register-button">Registrarse</button>
+
+            <div class="politicas">
+                <a href="#">Política de privacidad</a> | <a href="#">Política de cookies</a>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
