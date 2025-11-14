@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="duck&rollcatalogo.css">
-    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duck & Roll Store</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header-nav">
       <a class="brand" href="./index.html">
-        <img src="./img/logo.png" alt="Duck & Roll logo" class="brand-logo" />
+        <img src="./assets/img/logo.png" alt="Duck & Roll logo" class="brand-logo" />
         <h1 class="brand-name">Duck & Roll</h1>
       </a>
       <nav class="main-nav">
         <ul>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="./products.html">Productos</a></li>
+          <li><a href="./login.html">Contacto</a></li>
         </ul>
       </nav>
       <div class="container-search">
@@ -58,68 +62,44 @@
       </div>
     </header>
 
-    <main class="principal">
-        <section class="sectionmadredecajamadre">
-            <div class="cajamadre">
-                <img class="imagencaja"src="./assets/PATITOS/dj.jpg" alt="patodj">
-                <p class="parrafo"><b>PATO DJ</b> Precio=5€ stock=7unidades</p>
-                <button class="carrito">Agregar al carrito</button>
-                <a href="./detail.html" target="_blank" class="position"><b>+ Más Información</b></a>
-            </div>
-            <div class="cajamadre">
-                <img class="imagencaja" src="./assets/PATITOS/jokerrecortada.png" alt="patojoker">
-                <p class="parrafo"><b>PATO JOKER</b>Precio=5 stock=3unidades</p>
-                <button class="carrito">Agregar al carrito</button>
-                <a href="./detail.html" target="_blank" class="position"><b>+ Más Información</b></a>
-            </div>
-            <div class="cajamadre">
-                <img class="imagencaja" src="./assets/PATITOS/fontanerito1.png" alt="patofontanero">
-                <p class="parrafo"><b>FONTANERO</b> Precio=5€ stock=12unidades</p>
-                <button class="carrito">Agregar al carrito</button>
-                <a href="./detail.html" target="_blank" class="position"><b>+ Más Información</b></a>
-            </div>
-            <div class="cajamadre">
-                <img class="imagencaja" src="./assets/PATITOS/recortadaciclista.png" alt="patociclista">
-                <p class="parrafo"><b>PATO CICLISTA</b> Precio=5€ stock=9unidades</p>
-                <button class="carrito">Agregar al carrito</button>
-                <a href="./detail.html" target="_blank" class="position"><b>+ Más Información</b></a>
-            </div>
-        </section>
+    <main>
+      <div class="hero-cta-top">
+        <a class="btn btn-pill btn-yellow" href="./form.html">Regístrate</a>
+      </div>
+      <section class="main">
+        <div class="hero-grid">
+          <div class="blob">
+            <img src="./assets/img/patitos.png" alt="Patos de goma temáticos" />
+          </div>
 
-        <section class="sectionmadredecajamadre">
-            <div class="cajamadre">
-               <img class="imagencaja" src="./assets/PATITOS/nadador.jpg" alt="patonadador">
-                <p class="parrafo"><b>PATO NADADOR</b> Precio=5€ stock=7unidades</p>
-                <button class="carrito">Agregar al carrito</button>
-                <a href="./detail.html" target="_blank" class="position"><b>+ Más Información</b></a>
-            </div>
-            <div class="cajamadre">
-                <img class="imagencaja" src="./assets/PATITOS/duckroll.jpg" alt="patoduckroll">
-                <p class="parrafo"><b>PATO DUCK&ROLL</b> Precio=5€ stock=7unidades</p>
-                <button class="carrito">Agregar al carrito</button>    
-                <a href="./detail.html" target="_blank" class="position"><b>+ Más Información</b></a> 
-            </div>
-            
-            <div class="cajamadre">
-                <img class="imagencaja" src="./assets/PATITOS/gamer.jpg" alt="patogamer">
-                <p class="parrafo"><b>PATO GAMER</b> Precio=5€ stock=7unidades</p>
-                <button class="carrito">Agregar al carrito</button>
-                <a href="./detail.html" target="_blank" class="position"><b>+ Más Información</b></a>
-            </div>
-            <div class="cajamadre">
-                <img class="imagencaja" src="./assets/PATITOS/oficinista.jpg" alt="patooficinista">
-                <p class="parrafo"><b>PATO OFICINISTA</b> Precio=5€ stock=7unidades</p>
-                <button class="carrito">Agregar al carrito</button>
-                <a href="./detail.html" target="_blank" class="position"><b>+ Más Información</b></a>
-            </div>
-        </section>
+          <div class="hero-content">
+            <h2 class="welcome-title">Duck & Roll te da la bienvenida!</h2>
+
+            <p>
+              Esta tienda es un verdadero paraíso para los amantes de los
+              patitos de goma. Con una amplia variedad de diseños temáticos —
+              desde patitos disfrazados hasta ediciones especiales y
+              coleccionables —, ofrece una experiencia única y divertida que
+              despierta sonrisas en personas de todas las edades.
+            </p>
+            <p>
+              Abierta hasta las 20:30, invita a descubrir el mundo del
+              coleccionismo, la nostalgia y el humor a través de un producto tan
+              simple como encantador. Su misión: promover la creatividad y la
+              alegría a través de patitos personalizados, temáticos y llenos de
+              personalidad.
+            </p>
+
+            <a class="btn-products" href="./products.html">Ver catálogo</a>
+          </div>
+        </div>
+      </section>
     </main>
-    
     <footer class="footer">
             <div class="politicas">
-                <a href="https://www.cookiebot.com/es/privacy-policy/?utm_source=google&utm_medium=cpc&utm_term=politica%20de%20cookies&utm_campaign=cb_src_es_spa_generic_bof_cmp&utm_content=es_phrase_cokie_policy&campaign_id=21436235486&adset_id=172949612799&ad_id=729922042022&matchtype=p&utm_device=c&gclid=CjwKCAiA2svIBhB-EiwARWDPjpT9-5PKsfquHx-qEGmeylSf7_-afGVR1YIGiV2CTtxY-xhD8rGP9hoCNDoQAvD_BwE">Política de privacidad</a> | <a href="https://www.cookiebot.com/es/privacy-policy/?utm_source=google&utm_medium=cpc&utm_term=politica%20de%20cookies&utm_campaign=cb_src_es_spa_generic_bof_cmp&utm_content=es_phrase_cokie_policy&campaign_id=21436235486&adset_id=172949612799&ad_id=729922042022&matchtype=p&utm_device=c&gclid=CjwKCAiA2svIBhB-EiwARWDPjpT9-5PKsfquHx-qEGmeylSf7_-afGVR1YIGiV2CTtxY-xhD8rGP9hoCNDoQAvD_BwE">Política de cookies</a> 
-                <img  class="instagram"src="/assets/PATITOS/INSTAg.jpeg" alt="logo-de-instagram"> 
+                <a href="https://www.cookiebot.com/es/privacy-policy/?utm_source=google&utm_medium=cpc&utm_term=politica%20de%20cookies&utm_campaign=cb_src_es_spa_generic_bof_cmp&utm_content=es_phrase_cokie_policy&campaign_id=21436235486&adset_id=172949612799&ad_id=729922042022&matchtype=p&utm_device=c&gclid=CjwKCAiA2svIBhB-EiwARWDPjpT9-5PKsfquHx-qEGmeylSf7_-afGVR1YIGiV2CTtxY-xhD8rGP9hoCNDoQAvD_BwE">Política de privacidad</a> | <a href="https://www.cookiebot.com/es/privacy-policy/?utm_source=google&utm_medium=cpc&utm_term=politica%20de%20cookies&utm_campaign=cb_src_es_spa_generic_bof_cmp&utm_content=es_phrase_cokie_policy&campaign_id=21436235486&adset_id=172949612799&ad_id=729922042022&matchtype=p&utm_device=c&gclid=CjwKCAiA2svIBhB-EiwARWDPjpT9-5PKsfquHx-qEGmeylSf7_-afGVR1YIGiV2CTtxY-xhD8rGP9hoCNDoQAvD_BwE">Política de cookies</a>
+                <img  class="instagram" src="./assets/img/INSTAg.jpeg" alt="logo-de-instagram">
             </div>
     </footer>
-</body>
+  </body>
 </html>
