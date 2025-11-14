@@ -14,12 +14,11 @@ body {
   align-items: center;
 }
 .brand-logo {
-  width: 20%;
-  height: 50%;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: #EFEFEF;
   border: 2px solid #2B2417;
-  display: grid;
   place-items: center;
 }
 .brand {
@@ -75,226 +74,45 @@ justify-content: center;
         font-style: normal;
     }
     
-
-  
-    .section {
+    .sectionmadredecajamadre {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin-top: 55px;
 
     }
 
-
-
-
-.dj {
-      background-color: #F1D788; 
-      width: 300px;
-      text-align: center;
-      border: 1px solid #0c0a0a;
-      padding: 20px;
-      margin: 20px auto;
-      font-family: Arial, sans-serif;
-    }
-
-    .imagen1 {
-      width: 100%;
-      height: auto;
-    }
-
-    .parrafo1 {
-      margin: 15px 0;
-      font-size: 16px;
-    }
-
-    .carrito1 {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    
-.joker {
-      background-color: #F1D788;    
-      width: 300px;
-      text-align: center;
-      border: 1px solid #1b1b18;
-      padding: 20px;
-      margin: 20px auto;
-      font-family: Arial, sans-serif;
-    }
-
-    .imagen2 {
-      width: 100%;
-      height: auto;
-    }
-
-    .parrafo2 {
-      margin: 15px 0;
-      font-size: 16px;
-    }
-
-    .carrito2 {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    .fontanero {
-      background-color: #F1D788; 
-      width: 300px;
-      text-align: center;
-      border: 1px solid #100f0f;
-      padding: 20px;
-      margin: 20px auto;
-      font-family: Arial, sans-serif;
-    }
-
-    .imagen3 {
-      width: 100%;
-      height: auto;
-    }
-
-    .parrafo3 {
-      margin: 15px 0;
-      font-size: 16px;
-    }
-
-    .carrito3 {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-
-        .ciclista {
-      background-color: #F1D788; 
-      width: 300px;
-      text-align: center;
-      border: 1px solid #0a0909;
-      padding: 20px;
-      margin: 20px auto;
-      font-family: Arial, sans-serif;
-    }
-
-    .imagen4 {
-      width: 100%;
-      height: auto;
-    }
-
-    .parrafo4 {
-      margin: 15px 0;
-      font-size: 16px;
-    }
-
-    .carrito4 {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-       .nadador {
-      background-color: #F1D788; 
-      width: 300px;
-      text-align: center;
-      border: 1px solid #0c0b0b;
-      padding: 20px;
-      margin: 20px auto;
-      font-family: Arial, sans-serif;
-    }
-
-    .imagen5 {
-      width: 100%;
-      height: auto;
-    }
-
-    .parrafo5 {
-      margin: 15px 0;
-      font-size: 16px;
-    }
-
-    .carrito5 {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    .duckroll{
+    .cajamadre{
       background-color: #F1D788; 
       width: 300px;
       text-align: center;
       border: 1px solid #0a0a0a;
-      padding: 20px;
-      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       font-family: Arial, sans-serif;
+      margin: 20px auto;
+      padding: 20px;
+
+    }
+    .cajamadre a{
+      margin-top: 10px;
     }
 
-    .imagen6 {
+    .imagencaja {
       width: 100%;
       height: auto;
     }
 
-    .parrafo6 {
+    .parrafo {
       margin: 15px 0;
       font-size: 16px;
     }
 
-    .carrito6 {
+    .carrito {
       padding: 10px 20px;
       font-size: 16px;
       cursor: pointer;
     }
-    .gamer {
-      background-color: #F1D788; 
-      width: 300px;
-      text-align: center;
-      border: 1px solid #181616;
-      padding: 20px;
-      margin: 20px auto;
-      font-family: Arial, sans-serif;
-    }
-
-    .imagen7 {
-      width: 100%;
-      height: auto;
-    }
-
-    .parrafo7 {
-      margin: 15px 0;
-      font-size: 16px;
-    }
-
-    .carrito7 {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    .oficinista {
-      background-color: #F1D788; 
-      width: 300px;
-      text-align: center;
-      border: 1px solid #181414;
-      padding: 20px;
-      margin: 20px auto;
-      font-family: Arial, sans-serif;
-    }
-
-    .imagen8 {
-      width: 100%;
-      height: auto;
-    }
-
-    .parrafo8 {
-      margin: 15px 0;
-      font-size: 16px;
-    }
-
-    .carrito8 {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
+    
 
   .footer {
   text-align: center;
@@ -302,6 +120,9 @@ justify-content: center;
   background-color: #f2f2f2;
 }
 
-.position{
-    position: relative;
+
+.instagram{
+  weight:20px;
+  height: 20px;
+  float:right;
 }
