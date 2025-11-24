@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finalizar Compra | Duck & Roll</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/shop.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main class="checkout-container">
+      <h1>Tu carrito</h1>
+      <ul id="checkout-items" class="checkout-items"></ul>
+      <p id="checkout-total" class="checkout-total">Total: 0€</p>
+
+      <button id="checkout-btn" class="checkout-btn">Finalizar compra</button>
+
+      <section id="receipt-section" class="receipt hidden">
+        <h2>Recibo</h2>
+        <ul id="receipt-items"></ul>
+        <p id="receipt-total"></p>
+        <button id="pay-btn" class="pay-btn">Pagar</button>
+      </section>
+    </main>
+    <div id="footer"></div>
+    <script src="./scripts/include.js" defer></script>
+    <script src="./scripts/checkout.js"></script>
+  </body>
+</html>
