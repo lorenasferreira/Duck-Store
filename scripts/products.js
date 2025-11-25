@@ -52,7 +52,7 @@ export const products = [
     name: "Pato Gamer",
     price: 5,
     stock: 12,
-    image: "./assets/img/gamer.png",
+    image: "./assets/img/gamer.jpg",
     category: "trabajo"
   },
   {
