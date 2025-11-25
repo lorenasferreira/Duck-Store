@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Duck & Roll Store</title>
-    <link rel="stylesheet" href="./home.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+</head>
+<body>
     <header class="header-nav">
-      <a class="brand" href="./home.html">
-        <img src="./img/logo.png" alt="Duck & Roll logo" class="brand-logo" />
+      <a class="brand" href="./index.html">
+        <img src="./assets/img/logo.png" alt="Duck & Roll logo" class="brand-logo" />
         <h1 class="brand-name">Duck & Roll</h1>
       </a>
       <nav class="main-nav">
         <ul>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="./products.html">Productos</a></li>
+          <li><a href="./login.html">Contacto</a></li>
         </ul>
       </nav>
       <div class="container-search">
@@ -62,44 +57,43 @@
       </div>
     </header>
 
-    <main>
-      <div class="hero-cta-top">
-        <a class="btn btn-pill btn-yellow" href="#">Regístrate</a>
-      </div>
-      <section class="main">
-        <div class="hero-grid">
-          <div class="blob">
-            <img src="./img/patitos.png" alt="Patos de goma temáticos" />
-          </div>
+    <div class="form-container">
 
-          <div class="hero-content">
-            <h2 class="welcome-title">Duck & Roll te da la bienvenida!</h2>
+        <header class="form-subheader">
+            <p>Bienvenido</p>
+        </header>
 
-            <p>
-              Esta tienda es un verdadero paraíso para los amantes de los
-              patitos de goma. Con una amplia variedad de diseños temáticos —
-              desde patitos disfrazados hasta ediciones especiales y
-              coleccionables —, ofrece una experiencia única y divertida que
-              despierta sonrisas en personas de todas las edades.
-            </p>
-            <p>
-              Abierta hasta las 20:30, invita a descubrir el mundo del
-              coleccionismo, la nostalgia y el humor a través de un producto tan
-              simple como encantador. Su misión: promover la creatividad y la
-              alegría a través de patitos personalizados, temáticos y llenos de
-              personalidad.
-            </p>
+        <form action="/registro" method="post" class="registro-form">
 
-            <a class="btn-products" href="#">Ver catálogo</a>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
+
+            <div class="field-group one-col">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="hola@gmail.com" required>
+            </div>
+
+            <div class="field-group one-col">
+
+                <div class="field-group one-col">
+
+                    <div>
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" id="contrasena" name="contrasena" required>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+                </div>
+
+
+                <button type="submit" class="register-button">Iniciar sesión</button>
+
+        </form>
+    </div>
+      <footer class="footer">
             <div class="politicas">
                 <a href="https://www.cookiebot.com/es/privacy-policy/?utm_source=google&utm_medium=cpc&utm_term=politica%20de%20cookies&utm_campaign=cb_src_es_spa_generic_bof_cmp&utm_content=es_phrase_cokie_policy&campaign_id=21436235486&adset_id=172949612799&ad_id=729922042022&matchtype=p&utm_device=c&gclid=CjwKCAiA2svIBhB-EiwARWDPjpT9-5PKsfquHx-qEGmeylSf7_-afGVR1YIGiV2CTtxY-xhD8rGP9hoCNDoQAvD_BwE">Política de privacidad</a> | <a href="https://www.cookiebot.com/es/privacy-policy/?utm_source=google&utm_medium=cpc&utm_term=politica%20de%20cookies&utm_campaign=cb_src_es_spa_generic_bof_cmp&utm_content=es_phrase_cokie_policy&campaign_id=21436235486&adset_id=172949612799&ad_id=729922042022&matchtype=p&utm_device=c&gclid=CjwKCAiA2svIBhB-EiwARWDPjpT9-5PKsfquHx-qEGmeylSf7_-afGVR1YIGiV2CTtxY-xhD8rGP9hoCNDoQAvD_BwE">Política de cookies</a>
-                <img  class="instagram" src="./img/INSTAg.jpeg" alt="logo-de-instagram">
+                <img  class="instagram" src="./assets/img/INSTAg.jpeg" alt="logo-de-instagram">
             </div>
     </footer>
-  </body>
+</body>
 </html>
