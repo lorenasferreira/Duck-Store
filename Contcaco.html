@@ -8,40 +8,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
 </head>
 <body>
-      <div id="header"></div>
+    <div id="header"></div>
+
     <div class="form-container">
 
         <header class="form-subheader">
             <p>CONTACTO</p>
         </header>
 
-        <form action="/enviar-contacto" method="post" class="contact-form">
+        <div id="formulario-contenedor"> 
+             <form id="contacto-form" action="/enviar-contacto" method="post" class="contact-form">
+                
+                <div class="field-group one-col">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                
+                <div class="field-group one-col">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="hola@ejemplo.com" required>
+                </div>
 
+                <div class="field-group one-col">
+                    <label for="subject">Asunto</label>
+                    <input type="text" id="subject" name="subject" placeholder="Consulta sobre un producto, pedido, etc." required>
+                </div>
 
-            <div class="field-group one-col">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-            </div>
-            
-            <div class="field-group one-col">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="hola@ejemplo.com" required>
-            </div>
+                <div class="field-group one-col">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
 
-            <div class="field-group one-col">
-                <label for="subject">Asunto</label>
-                <input type="text" id="subject" name="subject" placeholder="Consulta sobre un producto, pedido, etc." required>
-            </div>
-
-            <div class="field-group one-col">
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
-            </div>
-
-            <button type="submit" class="send-button">Enviar mensaje</button>
-
-        </form>
-    </div>
+                <button type="submit" class="send-button">Enviar mensaje</button>
+            </form>
+        </div>
+        <div id="mensaje-exito" style="display: none;">
+            <div class="success-icon">✅</div>
+            <h2>¡Mensaje Enviado!</h2>
+            <p>Hemos recibido su mensaje. **Le responderemos a la brevedad posible.**</p>
+            <button id="volver-btn" class="send-button">Enviar Otro Mensaje</button>
+        </div>
+        </div>
+    
     <div id="footer"></div>
+    <script src="contacto.js"></script> 
 </body>
 </html>
