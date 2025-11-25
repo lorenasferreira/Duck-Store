@@ -9,21 +9,18 @@
   --radius-xxl: 36px;
   --shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
 }
-
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
   color: var(--text);
   line-height: 1.5;
 }
-
 .header-nav {
   background-color: var(--yellow);
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 .brand-logo {
   width: 100px;
   height: 100px;
@@ -33,7 +30,6 @@ body {
   display: grid;
   place-items: center;
 }
-
 .brand {
   display: flex;
   align-items: center;
@@ -110,7 +106,6 @@ justify-content: center;
   color: var(--text);
   text-align: center;
 }
-
 .hero-cta-top {
   display: flex;
   justify-content: flex-end;
@@ -130,7 +125,6 @@ justify-content: center;
   border-radius: 999px;
   background: #fff;
 }
-
 .btn-pill {
   padding: 10px;
 }
@@ -138,7 +132,6 @@ justify-content: center;
   background: var(--yellow);
   border: 2px solid #d0b052;
   border-radius: 50px;
-
 }
 .btn-yellow:hover {
   transform: translateY(-1px);
