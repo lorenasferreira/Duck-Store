@@ -33,9 +33,42 @@ h1, h2 {
   gap: 10px;
 }
 
+.product-info-column {
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+}
+
+.checkout-item img {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+
 .checkout-item span {
   font-size: 16px;
 }
+
+.checkout-item.shipping-row {
+    background: #fff;
+    border: none;
+    border-top: 2px dashed #ddd;
+    font-style: italic;
+    color: #6b6b6b;
+}
+
+.checkout-item.shipping-row span:first-child {
+
+    grid-column: 1 / span 3; 
+    text-align: right;
+}
+
+.checkout-item.shipping-row button {
+    visibility: hidden; 
+}
+
 
 .controls {
   display: flex;
@@ -126,6 +159,10 @@ h1, h2 {
 
 .pay-btn:hover {
   background: #1e5f63;
+}
+
+.hidden {
+  display: none !important;
 }
 
 @media (max-width: 600px) {

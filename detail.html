@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
   </head>
+  <body>
     <div id="header"></div>
     <main>
       <main class="product-page" aria-labelledby="product-title">
@@ -39,10 +40,11 @@
           </article>
 
           <aside class="purchase-panel" aria-label="Purchase options">
-            <button
+            <a 
+              href="shop.html"
               class="btn-primary add-to-cart"
-              type="button"
               aria-label="Añadir al carrito"
+              id="add-to-cart-link" 
             >
               Añadir al Carrito
               <svg class="icon-cart" viewBox="0 0 24 24" aria-hidden="true">
@@ -50,7 +52,7 @@
                   d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.45A2 2 0 0 0 10 19h10v-2H10.42a.25.25 0 0 1-.22-.37L11 14h7.55a2 2 0 0 0 1.9-1.37L22 7H6.42l-.7-1.4A1 1 0 0 0 5 5H2V3h3a2 2 0 0 1 1.8 1.1L7 4Z"
                 />
               </svg>
-            </button>
+            </a>
 
             <div class="qty-block" aria-label="Quantity selector">
               <label class="qty-label" for="qty-input">Cantidad</label>
@@ -58,7 +60,8 @@
                 <button
                   class="qty-btn"
                   type="button"
-                  aria-label="Increase quantity"
+                  aria-label="Decrease quantity"
+                  id="qty-minus"
                 >
                   -
                 </button>
@@ -67,22 +70,36 @@
                   class="qty-input"
                   type="number"
                   value="1"
-                  min="1"
+                  min="0"
                   inputmode="numeric"
                 />
                 <button
                   class="qty-btn"
                   type="button"
-                  aria-label="Decrease quantity"
+                  aria-label="Increase quantity"
+                  id="qty-plus"
                 >
                   +
                 </button>
               </div>
             </div>
+            
+            <button
+              class="btn-secondary reset-qty"
+              type="button"
+              aria-label="Restablecer cantidad a cero"
+              id="qty-reset"
+            >
+              Borrar / Resetear (0)
+            </button>
           </aside>
         </section>
       </main>
-<div id="footer"></div>
-   <script src="./scripts/include.js"></script>
+
+  <div id="footer"></div>
+  
+    <script src="./scripts/include.js"></script>
+    <script src="./scripts/detail.js" defer></script> 
+
   </body>
 </html>
