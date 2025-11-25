@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Duck & Roll</title>
+    <link rel="stylesheet" href="./Contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+</head>
+<body>
+      <div id="header"></div>
+    <div class="form-container">
+
+        <header class="form-subheader">
+            <p>CONTACTO</p>
+        </header>
+
+        <form action="/enviar-contacto" method="post" class="contact-form">
+
+
+            <div class="field-group one-col">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            </div>
+            
+            <div class="field-group one-col">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="hola@ejemplo.com" required>
+            </div>
+
+            <div class="field-group one-col">
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject" name="subject" placeholder="Consulta sobre un producto, pedido, etc." required>
+            </div>
+
+            <div class="field-group one-col">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="send-button">Enviar mensaje</button>
+
+        </form>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
