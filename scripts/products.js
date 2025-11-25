@@ -65,7 +65,7 @@ export const products = [
   }]
 
 
-  const container = document.querySelector(".sectionmadredecajamadre");
+const container = document.querySelector(".sectionmadredecajamadre");
 
 function renderProducts() {
   container.innerHTML = "";
