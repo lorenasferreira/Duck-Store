@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    
     // Pecios del patito y del envio
     const UNIT_PRICE = 5.00; 
     const PRODUCT_NAME = 'Patito Rubber Joker';

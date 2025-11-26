@@ -3,21 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tienda de Patitos</title>
     <link rel="stylesheet" href="./styles/index.css" />
-     <link rel="stylesheet" href="./styles/products.css">
+     <link rel="stylesheet" href="./styles/products.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="header"></div>
+    <div id="header"> </div>
     <main class="principal">
+        
+        <div class="filter-container" style="text-align: center; margin: 20px 0;">
+            <label for="category-filter">Filtrar por Categoría:</label>
+            <select id="category-filter" style="padding: 5px; border: 1px solid #46454B;">
+                <option value="all">Todas las Categorías</option>
+                <option value="musica">Música</option>
+                <option value="cine">Cine</option>
+                <option value="trabajo">Trabajo</option>
+                <option value="deporte">Deporte</option>
+            </select>
+        </div>
+
         <section class="sectionmadredecajamadre">
            
         </section>
 
     </main>
-   <div id="footer"></div>
+    
+   <div id="footer"> </div>
+
    <script type="module" src="/scripts/include.js"></script>
    <script  type="module" src="./scripts/products.js"></script>
+
 </body>
 </html>
