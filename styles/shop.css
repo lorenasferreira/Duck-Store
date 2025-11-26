@@ -5,14 +5,12 @@
   font-family: "Inter", sans-serif;
   color: #333;
 }
-
 h1, h2 {
-  font-family: "Irish Grover", cursive;
+  font-family: "Inter", sans-serif;
   color: #46454B;
   text-align: center;
   margin-bottom: 20px;
 }
-
 .checkout-items {
   list-style: none;
   display: flex;
@@ -21,7 +19,6 @@ h1, h2 {
   padding: 0;
   margin: 0 0 25px 0;
 }
-
 .checkout-item {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr auto;
@@ -32,25 +29,20 @@ h1, h2 {
   border: 2px solid #ddd;
   gap: 10px;
 }
-
 .product-info-column {
     display: flex; 
     align-items: center; 
     gap: 10px;
 }
-
 .checkout-item img {
     width: 60px; 
     height: 60px; 
     border-radius: 6px;
     object-fit: cover;
 }
-
-
 .checkout-item span {
   font-size: 16px;
 }
-
 .checkout-item.shipping-row {
     background: #fff;
     border: none;
@@ -58,24 +50,18 @@ h1, h2 {
     font-style: italic;
     color: #6b6b6b;
 }
-
 .checkout-item.shipping-row span:first-child {
-
     grid-column: 1 / span 3; 
     text-align: right;
 }
-
 .checkout-item.shipping-row button {
     visibility: hidden; 
 }
-
-
 .controls {
   display: flex;
   align-items: center;
   gap: 6px;
 }
-
 .controls button {
   background: #298087;
   color: white;
@@ -86,22 +72,18 @@ h1, h2 {
   font-size: 18px;
   cursor: pointer;
 }
-
 .controls button:hover {
   background: #1f666a;
 }
-
 .checkout-item button[data-action="remove"] {
   background: #d72f2e;
   width: 30px;
   height: 30px;
   border-radius: 50%;
 }
-
 .checkout-item button[data-action="remove"]:hover {
   background: #a82222;
 }
-
 .checkout-total {
   font-size: 20px;
   font-weight: 700;
@@ -109,7 +91,6 @@ h1, h2 {
   margin-top: 10px;
   margin-bottom: 25px;
 }
-
 .checkout-btn {
   width: 100%;
   padding: 14px;
@@ -121,11 +102,9 @@ h1, h2 {
   font-size: 18px;
   cursor: pointer;
 }
-
 .checkout-btn:hover {
   background: #e3bf5d;
 }
-
 .receipt {
   background: #fff5cc;
   padding: 20px;
@@ -133,7 +112,6 @@ h1, h2 {
   border: 2px solid #f0d98f;
   margin-top: 40px;
 }
-
 .receipt ul {
   list-style: none;
   padding: 0;
@@ -144,7 +122,6 @@ h1, h2 {
   padding: 8px 0;
   border-bottom: 1px solid #e3d7a8;
 }
-
 .pay-btn {
   margin-top: 20px;
   width: 100%;
@@ -156,15 +133,12 @@ h1, h2 {
   font-size: 18px;
   cursor: pointer;
 }
-
 .pay-btn:hover {
   background: #1e5f63;
 }
-
 .hidden {
   display: none !important;
 }
-
 @media (max-width: 600px) {
   .checkout-item {
     grid-template-columns: 1fr 1fr;

@@ -36,13 +36,11 @@ body {
   gap: 0.9rem;
   color: #2b2417;
 }
-
 .brand-name {
   font-family: "Irish Grover", sans-serif;
   font-size: 50px;
   color: var(--text);
 }
-
 .main-nav ul {
   display: flex;
   gap: 2rem;
@@ -67,7 +65,6 @@ justify-content: center;
   padding: 5px;
   border: 1px solid black;
 }
-
 .search input {
   border: none;
   font: inherit;
@@ -92,7 +89,6 @@ justify-content: center;
   align-items: center;
   gap: clamp(1.2rem, 4vw, 3rem);
 }
-
 .blob {
   background: var(--yellow);
   border-radius: var(--radius-xxl);

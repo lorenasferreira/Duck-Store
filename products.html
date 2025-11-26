@@ -10,7 +10,9 @@
 </head>
 <body>
     <div id="header"> </div>
+
     <main class="principal">
+        
         <div class="filter-container" style="text-align: center; margin: 20px 0;">
             <label for="category-filter">Filtrar por Categoría:</label>
             <select id="category-filter" style="padding: 5px; border: 1px solid #46454B;">
@@ -22,22 +24,15 @@
             </select>
         </div>
 
-        <h3>Categorias</h3>
-        <select id="typeFilter">
-            <option value="Música">🎵Música</option>
-            <option value="Trabajo">👔Trabajo</option>
-            <option value="Deporte">🚴Deporte</option>
-            <option value="Cine">🎬Cine</option>
-        </select>
-        <section class="sectionmadredecajamadre">
-        </section>
+        <section class="sectionmadredecajamadre"></section>
+
     </main>
     
    <div id="footer"> </div>
 
-   <script type="module" src="/scripts/include.js"></script>
+   <script type="module" src="./scripts/include.js"></script>
    <script  type="module" src="./scripts/products.js"></script>
-   <script type="module" src="./scripts/filters.js"></script>
+   <script type="module" src="./scripts/render.js"></script>
 
 </body>
 </html>

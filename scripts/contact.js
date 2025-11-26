@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contacto-form');
     const formContenedor = document.getElementById('formulario-contenedor');

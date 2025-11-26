@@ -5,7 +5,7 @@ const container = document.querySelector(".sectionmadredecajamadre");
 const select = document.querySelector("#typeFilter");
 
 function renderCatalog(lista) {
-  container.innerHTML = ""; // limpiar antes de renderizar
+  container.innerHTML = "";
   lista.forEach(pato => {
     container.innerHTML += `
       <div class="cajamadre">

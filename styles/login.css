@@ -3,13 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
-.irish-grover-regular {
-  font-family: "Irish Grover", system-ui;
-  font-weight: 400;
-  font-style: normal;
-} 
-
 :root {
   --yellow: #ffbf0097;
   --yellow-200: #F1D788;
@@ -17,12 +10,6 @@
 }
 body {
   font-family: "Inter", sans-serif;
-}
-.header-nav {
-  background-color: var(--yellow);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 .brand-logo {
   width: 100px;
