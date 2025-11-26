@@ -1,5 +1,4 @@
 
-
 export const products = [
   {
     id: 1,
@@ -142,3 +141,6 @@ if (filterSelect) {
 document.addEventListener('DOMContentLoaded', () => {
     renderProducts();
 });
+
+renderProducts();
+
