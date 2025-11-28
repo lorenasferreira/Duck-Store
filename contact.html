@@ -1,59 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto - Duck & Roll</title>
     <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/contact.css">
-    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="header"></div>
-
-    <div class="form-container">
-
+    <main>
+      <div class="form-container">
         <header class="form-subheader">
-            <p>CONTACTO</p>
+          <h2>CONTACTO</h2>
         </header>
 
-        <div id="formulario-contenedor"> 
-             <form id="contacto-form" action="/enviar-contacto" method="post" class="contact-form">
-                
-                <div class="field-group one-col">
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-                </div>
-                
-                <div class="field-group one-col">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="hola@ejemplo.com" required>
-                </div>
+        <div id="formulario-contenedor">
+          <form
+            id="contacto-form"
+            action="/enviar-contacto"
+            method="post"
+            class="contact-form"
+          >
+            <div class="field-group one-col">
+              <label for="name">Nombre</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Tu nombre"
+                required
+                aria-required="true"
+              />
+            </div>
 
-                <div class="field-group one-col">
-                    <label for="subject">Asunto</label>
-                    <input type="text" id="subject" name="subject" placeholder="Consulta sobre un producto, pedido, etc." required>
-                </div>
+            <div class="field-group one-col">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="hola@ejemplo.com"
+                required
+                aria-required="true"
+              />
+            </div>
 
-                <div class="field-group one-col">
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </div>
+            <div class="field-group one-col">
+              <label for="subject">Asunto</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Consulta sobre un producto, pedido, etc."
+                required
+                aria-required="true"
+              />
+            </div>
 
-                <button type="submit" class="send-button">Enviar mensaje</button>
-            </form>
+            <div class="field-group one-col">
+              <label for="message">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required aria-required="true"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="send-button" aria-label="Enviar mensaje del formulario de contacto">Enviar mensaje</button>
+          </form>
         </div>
-        <div id="mensaje-exito" style="display: none;">
-            <div class="success-icon">✅</div>
-            <h2>¡Mensaje Enviado!</h2>
-            <p>Hemos recibido su mensaje. **Le responderemos a la brevedad posible.**</p>
-            <button id="volver-btn" class="send-button">Enviar Otro Mensaje</button>
+        <div id="mensaje-exito" style="display: none" role="alert">
+          <div class="success-icon" >✅</div>
+          <h2>¡Mensaje Enviado!</h2>
+          <p>
+            Hemos recibido su mensaje. **Le responderemos a la brevedad
+            posible.**
+          </p>
+          <button id="volver-btn" class="send-button" aria-label="Enviar otro mensaje desde el formulario">
+            Enviar Otro Mensaje
+          </button>
         </div>
-        </div>
-    
+      </div>
+    </main>
     <div id="footer"></div>
-
-  <script src="./scripts/include.js"></script>
-  <script src="./scripts/contact.js"></script>
-</body>
+    <script src="./scripts/include.js"></script>
+    <script src="./scripts/contact.js"></script>
+  </body>
 </html>

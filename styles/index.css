@@ -1,7 +1,7 @@
 :root {
   --yellow: #ffbf0097;
   --yellow-200: #f1d788;
-  --text: #46454B;
+  --text: #46454b;
   --text-strong: #2a2a2a;
   --bg: #ffffff;
   --muted: #6b6b6b;
@@ -48,14 +48,22 @@ body {
   color: var(--text);
   list-style: none;
 }
+.hamburger {
+  font-size: 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  color: var(--text);
+}
 a {
   color: inherit;
   text-decoration: none;
 }
 .container-search {
-display: flex; 
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .search {
   display: flex;
@@ -75,13 +83,13 @@ justify-content: center;
   cursor: pointer;
 }
 .main {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 0px;
-    padding-right: 100px;
-    padding-left: 100px;
-    margin: 5px
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 0px;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin: 5px;
 }
 .hero-grid {
   display: grid;
@@ -138,10 +146,83 @@ justify-content: center;
 .instagram {
   width: 20px;
   height: 20px;
-  float:right;
+  float: right;
 }
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .brand {
+    margin: 0 auto;
+  }
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    background: var(--yellow-200);
+    padding: 20px;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .main-nav.open {
+    display: block;
+  }
+  .container-search .search {
+    display: none;
+  }
+  .brand-name {
+    font-family: "Irish Grover", sans-serif;
+    font-size: 24px;
+    color: var(--text);
+  }
+  .brand-logo {
+    width: 50px;
+    height: 50px;
+  }
+  .icon-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .login-link {
+    display: none;
+  }
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .blob {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    border-radius: var(--radius-xl);
+  }
+  .blob img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .welcome-title {
+    font-size: 24px;
+  }
+  .hero-content {
+    font-size: 16px;
+  }
+  .main {
+    padding: 0 1rem;
+    flex-direction: column;
+  }
 }
